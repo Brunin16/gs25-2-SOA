@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@//oracle.fiap.com.br:1521/ORCL
+    driver-class-name: oracle.jdbc.OracleDriver
+    username: rm558303
+    password: fiap25
+
+  jpa:
+    database-platform: org.hibernate.dialect.OracleDialect
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: update 
+    show-sql: false
+security:
+  jwt:
+    secret: "dasdjasghduyasb1iyubd12jouhg97d8"
+    expiration: 3600000 
+    username: "admin"
+    password: "admin"

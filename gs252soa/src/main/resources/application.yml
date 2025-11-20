@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: EmpregabilitySystem
+  profiles:
+    active: dev
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    display-request-duration: true
+    operationsSorter: alpha
+    tagsSorter: alpha
